@@ -20,7 +20,7 @@ class Solution {
             dam[l]--;
             left++;
         }
-
+        //update max value everytime
         res = Math.max(res,right-left+1);
         right++;
        }
