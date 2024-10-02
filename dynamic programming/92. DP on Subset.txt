@@ -1,3 +1,7 @@
 - pick and not pick
+pick refers different things here
+pick the sum or some count
+some value u consider or some operation u perform like swap.
+
 - knapsack problem
 - tabulation for tricky problems
