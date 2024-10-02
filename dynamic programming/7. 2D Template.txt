@@ -1,0 +1,2 @@
+- try all combinations
+- flood fill/boundry fill
