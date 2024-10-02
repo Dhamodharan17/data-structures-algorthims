@@ -1,1 +1,5 @@
-
+function calls for given steps
+- count
+- sum
+- min/max
+- max difference 
