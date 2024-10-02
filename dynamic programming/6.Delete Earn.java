@@ -68,4 +68,25 @@ class Solution {
             return cache[n]= Math.max(delete,notDelete);
         }
 }
+//tabulation
+
+class Solution {
+    public int deleteAndEarn(int[] nums) {
+        
+        int max = Arrays.stream(nums).max().orElse(Integer.MIN_VALUE);
+
+        int dp[] = new int[max+1];
+
+        //counting the sum of numbers
+        for(int n:nums){
+            dp[n] = dp[n]+n;
+        }
+
+        for(int i=2;i<=max;i++){
+            dp[i] = Math.max(dp[i-1], dp[i-2]+dp[i]);
+        }
+
+        return dp[max];
+    }
+}
 
