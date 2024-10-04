@@ -14,6 +14,7 @@ class Solution{
 
         //try all possible paritions
         for(int k=i;k<=j-1;k++){
+            //left + right + current
             int ans = mcm(arr,i,k) + mcm(arr,k+1,j)+
             arr[i-1]*arr[k]*arr[j];//number of operation required to multiply current 3 matices
             mini = Math.min(mini,ans);
