@@ -3,6 +3,12 @@
 //we need to update right distance from 0
 //push all 1's find righ distance from 4 directions
 //add in queue again, all neighbors will also get new distance
+
+/*
+operation- add 1 to queue
+bfs - update new vaue to adjacenr
+
+*/
 class Solution {
     public int[][] updateMatrix(int[][] mat) {
 
