@@ -1,7 +1,14 @@
+/*
+operation - add 1's to queue
+bfs
+operation - count number of 1's
+
+*/
 //https://leetcode.com/problems/number-of-enclaves/
 
 class Solution {
     int[][] directions = {{-1,0},{1,0},{0,-1},{0,1}};
+    
     public int numEnclaves(int[][] grid) {
         
         int rows = grid.length;
