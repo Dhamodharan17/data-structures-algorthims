@@ -1,3 +1,10 @@
+/*
+-conversion
+-logic (colors array)
+-bfs( return)
+
+*/
+
 class Solution {
 
     public void converter(int[][] graph, List<List<Integer>> list,int n){
