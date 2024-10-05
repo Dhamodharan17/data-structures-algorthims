@@ -5,6 +5,13 @@ differinate the border connected and normal O's
 and mark it X
 */
 
+/*
+
+operatio - add border to queue
+operatio - bfs
+operation - flip
+*/
+
 class Solution {
 
     int[][] directions = {{0,-1},{0,1},{1,0},{-1,0}};
