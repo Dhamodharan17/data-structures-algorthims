@@ -1,5 +1,6 @@
 //DFS- call next and deeper
 
+//matrix
 class Solution {
     public int findCircleNum(int[][] isConnected) {
             
@@ -28,3 +29,33 @@ class Solution {
     }
 
 }
+//adj list
+class Solution {
+    static int numProvinces(ArrayList<ArrayList<Integer>> adj, int V) {
+        
+        boolean[] vis = new boolean[V];
+        int count=0;
+        
+        for(int i=0;i<V;i++){
+            if(vis[i]) continue;
+            count++;
+            dfs(i,adj,vis);
+        }
+        
+        return count;
+        
+    }
+    
+    static void dfs(int node,ArrayList<ArrayList<Integer>> adj,boolean[] vis){
+        
+        vis[node]=true;
+        // call relatives
+        for(int next:adj.get(node)){
+            if(next==0 || vis[next]) continue;
+            dfs(next,adj,vis);
+        }
+        
+        
+    }
+    
+};
