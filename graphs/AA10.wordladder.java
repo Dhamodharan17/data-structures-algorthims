@@ -1,3 +1,9 @@
+/*
+datastrcture -> hashset
+bfs return
+
+*/
+
 class Solution {
 
     // to store word and current sequence since we need to find the shortest sequence
