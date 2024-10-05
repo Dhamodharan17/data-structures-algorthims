@@ -1,3 +1,6 @@
+// dfs+operation to adjacenet
+
+
 class Solution {
 
     int[][] directions = {{0,1},{0,-1},{1,0},{-1,0}};
