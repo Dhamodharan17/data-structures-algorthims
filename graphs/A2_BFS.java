@@ -1,3 +1,4 @@
+//matrix https://leetcode.com/problems/number-of-provinces/
 class Solution {
 
     boolean[] visited;
@@ -37,3 +38,39 @@ class Solution {
 
 
 }
+
+//adj list - https://www.geeksforgeeks.org/problems/number-of-provinces/1
+class Solution {
+    static int numProvinces(ArrayList<ArrayList<Integer>> adj, int V) {
+        
+        boolean[] vis = new boolean[V];
+        int count=0;
+        
+        for(int i=0;i<V;i++){
+            if(vis[i]) continue;
+            count++;
+            bfs(i,adj,vis);
+        }
+        
+        return count;
+        
+    }
+    
+    static void bfs(int node,ArrayList<ArrayList<Integer>> adj,boolean[] vis){
+        
+        Queue<Integer> q = new LinkedList<>();
+        q.add(node);
+        vis[node]=true;
+        
+        while(!q.isEmpty()){
+             // call relatives
+            node = q.remove();
+            for(int next:adj.get(node)){
+            if(next==0 || vis[next]) continue;
+            q.add(next);
+            vis[next]=true;
+        }
+      }
+}
+    
+};
