@@ -6,6 +6,11 @@ operation - count number of 1's
 */
 //https://leetcode.com/problems/number-of-enclaves/
 
+/*
+operation - add borders to queue
+bfs
+operation count number of 1's
+*/
 class Solution {
     int[][] directions = {{-1,0},{1,0},{0,-1},{0,1}};
     
