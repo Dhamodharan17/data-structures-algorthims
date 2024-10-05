@@ -4,6 +4,11 @@ https://leetcode.com/problems/shortest-distance-from-all-buildings/description/
 https://leetcode.com/problems/as-far-from-land-as-possible/description/
 */
 
+/*
+operation - add 2s to queue
+bfs
+operation - get max value and check 1 present
+*/
 class Solution {
     public int orangesRotting(int[][] grid) {
 
