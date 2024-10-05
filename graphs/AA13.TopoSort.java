@@ -41,3 +41,41 @@ class Solution
         
     }
 }
+//bfs
+class Solution
+{
+    //Function to return list containing vertices in Topological order. 
+    static int[] topoSort(int V, ArrayList<ArrayList<Integer>> adj) 
+    {
+      
+      int[] inDegree = new int[V];
+    
+      
+      for(int current=0;current<adj.size();current++){
+          for(int next:adj.get(current)){
+              inDegree[next]+=1;
+          }
+      }
+      
+      Queue<Integer> q = new LinkedList<>();
+      
+      for(int i=0;i<V;i++){
+          if(inDegree[i]==0) q.add(i);
+      }
+      
+      int[] result = new int[V];
+      int index=0;
+      
+      while(!q.isEmpty()){
+          int current = q.remove();
+          result[index++] = current;
+          for(int next: adj.get(current)){
+              inDegree[next]--;
+              if(inDegree[next] ==0 ) q.add(next);
+          }
+      }
+      
+      
+      return result;
+    }
+}
