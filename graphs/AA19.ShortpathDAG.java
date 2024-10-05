@@ -1,3 +1,4 @@
+//using stack
 class Solution {
 
     class Pair{
