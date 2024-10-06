@@ -1,3 +1,5 @@
+//Return the same node or processed / new node
+
 //print
 class Solution {
     void display(Node head) {
