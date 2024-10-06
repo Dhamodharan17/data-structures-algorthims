@@ -1,5 +1,5 @@
 //untill we have carry || list 1 || list 2
-
+//create node for remainder and add carry and cumulative total
 class Solution {
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
 
