@@ -22,9 +22,13 @@ class Solution {
         if(sep==-1) return root;
 
         int numberofnodes = sep - iStart;
-
+        //postorder
         root.left = build(inorder,iStart,sep-1,pStart,pStart+numberofnodes-1,postorder);
         root.right = build(inorder,sep+1,iEnd,pStart+numberofnodes,pEnd-1,postorder);
+        //preorder
+        //root.left = build(iStart,sep-1,inorder,pStart+1,pStart+num,preorder);
+        //root.right = build(sep+1,iEnd,inorder,pStart+num+1,pEnd,preorder);
+
 
         return root;
     }
