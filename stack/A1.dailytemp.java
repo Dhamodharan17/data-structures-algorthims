@@ -18,7 +18,9 @@ class Solution {
     }
 }
 
-//optimised
+//optimised - we want to find max for each element, we can do it in one go ( 6 4 3 2 5) for 4 3 2 max is 5.
+// add 4 3 2 when 5 comes make 5 max for those.
+//monotonic stack - stores element in any one order and tries to keep that
 class Solution {
     public int[] dailyTemperatures(int[] temperatures) {
         int n = temperatures.length;
