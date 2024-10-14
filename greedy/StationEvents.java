@@ -20,11 +20,14 @@ class Solution {
     }
   
 //Decision 1: Sort based on  time and give preference to early arrival      
-  events.sort((o1,o2)->{
-      if(o1!=o2) return o1.time - o2.time;
-
-      return o2.arrival - o1.arrival;
-  });
+ events.sort((o1, o2) -> {
+    int timeComparison = Integer.compare(o1.time, o2.time);
+    if (timeComparison != 0) {
+        return timeComparison; // If times are different, return the comparison result
+    }
+    // If times are the same, compare arrival times
+    return Integer.compare(o2.arrival, o1.arrival); // Reverse order for arrival
+});
     
     //Decision 2 - arrival increase platform , departure decrease platform
     int platforms=0;
