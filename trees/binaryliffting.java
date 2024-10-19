@@ -34,7 +34,8 @@ class TreeAncestor {
     public int getKthAncestor(int node, int k) {
         
         for(int parent=0;parent<maxPower;parent++){
-
+            // check parent there for k
+            // let k=0(0b), it will not have parent 1,2,3...
             if((k & (1<<parent)) !=0){//check parent exists usin binary form of k
                 node = ancestor[node][parent];//move to 2^k ancestor
                 if(node==-1) return -1;
