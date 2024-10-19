@@ -1,8 +1,17 @@
 ### Tree Topics
 - Traversal
+    -  https://leetcode.com/problems/minimum-depth-of-binary-tree/
 - Binary Search Tree
+   - https://leetcode.com/problems/binary-search-tree-to-greater-sum-tree/description/
+   - https://leetcode.com/problems/recover-binary-search-tree/description/
 - Level order
+  - https://leetcode.com/problems/populating-next-right-pointers-in-each-node-ii/
 - Root to leaf
+  - https://leetcode.com/problems/binary-tree-paths/description/
 - Anchestor
+   - https://leetcode.com/problems/kth-ancestor-of-a-tree-node/description/
+   - https://leetcode.com/problems/maximum-difference-between-node-and-ancestor/description/
 - Construction
+   - https://leetcode.com/problems/merge-two-binary-trees/description/
 - Leaves
+  - https://leetcode.com/problems/minimum-depth-of-binary-tree/
