@@ -72,3 +72,10 @@ let p = 31
             System.out.println("The hashes are different.");
         }
     }
+  ```
+
+  #### Problems
+
+- Finding duplicate substrings: "Given a string, find the longest substring that appears at least twice."
+- Substring search: "Check if one string is a substring of another."
+- Anagram detection: "Check if two strings are anagrams."
