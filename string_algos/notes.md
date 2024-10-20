@@ -13,3 +13,16 @@
 	11.Longest Palindromic substring
 	12.String compresion
 	*/
+
+
+	/*
+	String Hashing: Substring comparison, plagiarism detection.
+	Rabin-Karp: Multiple pattern searching, plagiarism detection.
+	KMP: DNA sequence matching, text editors.
+	Z Algorithm: Prefix matching, overlapping patterns.
+	Suffix Array: Lexicographical sorting, longest repeated substring.
+	Aho-Corasick: Dictionary matching, multiple pattern matching.
+	Finite Automata: Deterministic pattern matching.
+	Boyer-Moore: Large text searches, DNA sequencing.
+	Manacher’s Algorithm: Palindrome problems, genetic symmetry analysis.
+	 */
