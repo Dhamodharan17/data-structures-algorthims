@@ -14,7 +14,7 @@ class Solution {
 
         if(s.charAt(s1) == t.charAt(t1)){
           //Input: s = "babgbag", t = "bag"
-          //if we both we will miss to match bag since will lose g.
+          //if we decrease both we will miss to match bag since will lose g.
           //also there might be multiple occurence of t1 in s2
             return findLCS(s1-1,t1-1,s,t) + findLCS(s1-1,t1,s,t);
         }else{
